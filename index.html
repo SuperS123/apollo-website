@@ -4,11 +4,32 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Apollo Client" />
+    <meta name="language" content="English" />
+    <meta
+      name="theme-color"
+      content="#ffffff" />
+
+    <meta
+      property="og:type"
+      content="website" />
+    <meta
+      property="og:description"
+      content="Apollo Client" />
+    <meta
+      property="og:title"
+      content="Apollo Client" />
+    <meta
+      property="og:url"
+      content="http://apolloclient.net" />
+    <title>Apollo Client</title>
     <style>
-			@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
       html {
         height: 100%;
+        overflow-x: hidden;
       }
 
       *,
@@ -17,14 +38,20 @@
         box-sizing: inherit;
       }
       body {
+        position: relative;
+        overflow-x: hidden;
         font-family: Montserrat;
         line-height: 1.5;
         margin: 0;
         min-height: 100%;
         box-sizing: border-box;
-        background-image: url('https://iili.io/2oFsY7.png');
+        background-image: url('https://cdn-105.anonfiles.com/P0B3P8V5o6/2d016fdf-1600285747/space%20no%20artifacts.png');
         background-size: 100% 100%;
         background-position: right;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
       }
       .img1 {
         width: 100%;
@@ -37,12 +64,17 @@
         position: relative;
         top: 68%;
         border-radius: 20px;
-        background: #000;
+        background-size: 45px;
         opacity: 0.8;
         transition: transform 0.8s ease;
+        /*transition: background-size 1s linear;*/
+        background-repeat: no-repeat;
+        background-origin: center;
+        background-position: center;
       }
       .div1:hover {
         transform: scale(0.9);
+        /*background-size: 50.625%;*/
       }
       .buttongroup {
         width: 100%;
@@ -70,217 +102,216 @@
         }
       }
 
-     [data-tooltip],
-			.tooltip {
-				position: relative;
-				cursor: pointer;
-			}
+      [data-tooltip],
+      .tooltip {
+        position: relative;
+        cursor: pointer;
+      }
 
-			/* Base styles for the entire tooltip */
-			[data-tooltip]:before,
-			[data-tooltip]:after,
-			.tooltip:before,
-			.tooltip:after {
-				position: absolute;
-				visibility: hidden;
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-				opacity: 0;
-				-webkit-transition: 
-					opacity 0.2s ease-in-out,
-					visibility 0.2s ease-in-out,
-					-webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-				-moz-transition:    
-					opacity 0.2s ease-in-out,
-					visibility 0.2s ease-in-out,
-					-moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-				transition:         
-					opacity 0.2s ease-in-out,
-					visibility 0.2s ease-in-out,
-					transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-				-webkit-transform: translate3d(0, 0, 0);
-				-moz-transform:    translate3d(0, 0, 0);
-				transform:         translate3d(0, 0, 0);
-				pointer-events: none;
-			}
+      /* Base styles for the entire tooltip */
+      [data-tooltip]:before,
+      [data-tooltip]:after,
+      .tooltip:before,
+      .tooltip:after {
+        position: absolute;
+        visibility: hidden;
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        -webkit-transition: opacity 0.2s ease-in-out,
+          visibility 0.2s ease-in-out,
+          -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+        -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+          -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+          transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        pointer-events: none;
+      }
 
-			/* Show the entire tooltip on hover and focus */
-			[data-tooltip]:hover:before,
-			[data-tooltip]:hover:after,
-			[data-tooltip]:focus:before,
-			[data-tooltip]:focus:after,
-			.tooltip:hover:before,
-			.tooltip:hover:after,
-			.tooltip:focus:before,
-			.tooltip:focus:after {
-				visibility: visible;
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-				opacity: 1;
-			}
+      /* Show the entire tooltip on hover and focus */
+      [data-tooltip]:hover:before,
+      [data-tooltip]:hover:after,
+      [data-tooltip]:focus:before,
+      [data-tooltip]:focus:after,
+      .tooltip:hover:before,
+      .tooltip:hover:after,
+      .tooltip:focus:before,
+      .tooltip:focus:after {
+        visibility: visible;
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+      }
 
-			/* Base styles for the tooltip's directional arrow */
-			.tooltip:before,
-			[data-tooltip]:before {
-				z-index: 1001;
-				border: 6px solid transparent;
-				background: transparent;
-				content: "";
-			}
+      /* Base styles for the tooltip's directional arrow */
+      .tooltip:before,
+      [data-tooltip]:before {
+        z-index: 1001;
+        border: 6px solid transparent;
+        background: transparent;
+        content: '';
+      }
 
-			/* Base styles for the tooltip's content area */
-			.tooltip:after,
-			[data-tooltip]:after {
-				z-index: 1000;
-				padding: 8px;
-				width: 160px;
-				background-color: #000;
-				background-color: hsla(0, 0%, 20%, 0.9);
-				border-radius: 5px;
-				color: #fff;
-				content: attr(data-tooltip);
-				font-size: 12px;
-				line-height: 1.2;
-			}
+      /* Base styles for the tooltip's content area */
+      .tooltip:after,
+      [data-tooltip]:after {
+        z-index: 1000;
+        padding: 8px;
+        width: 160px;
+        background-color: #000;
+        background-color: hsla(0, 0%, 20%, 0.9);
+        border-radius: 5px;
+        color: #fff;
+        content: attr(data-tooltip);
+        font-size: 12px;
+        line-height: 1.2;
+      }
 
-			/* Directions */
+      /* Directions */
 
-			/* Top (default) */
-			[data-tooltip]:before,
-			[data-tooltip]:after,
-			.tooltip:before,
-			.tooltip:after,
-			.tooltip-top:before,
-			.tooltip-top:after {
-				bottom: 100%;
-				left: 50%;
-			}
+      /* Top (default) */
+      [data-tooltip]:before,
+      [data-tooltip]:after,
+      .tooltip:before,
+      .tooltip:after,
+      .tooltip-top:before,
+      .tooltip-top:after {
+        bottom: 100%;
+        left: 50%;
+      }
 
-			[data-tooltip]:before,
-			.tooltip:before,
-			.tooltip-top:before {
-				margin-left: -6px;
-				margin-bottom: -12px;
-				border-top-color: #000;
-				border-top-color: hsla(0, 0%, 20%, 0.9);
-			}
+      [data-tooltip]:before,
+      .tooltip:before,
+      .tooltip-top:before {
+        margin-left: -6px;
+        margin-bottom: -12px;
+        border-top-color: #000;
+        border-top-color: hsla(0, 0%, 20%, 0.9);
+      }
 
-			/* Horizontally align top/bottom tooltips */
-			[data-tooltip]:after,
-			.tooltip:after,
-			.tooltip-top:after {
-				margin-left: -80px;
-			}
+      /* Horizontally align top/bottom tooltips */
+      [data-tooltip]:after,
+      .tooltip:after,
+      .tooltip-top:after {
+        margin-left: -80px;
+      }
 
-			[data-tooltip]:hover:before,
-			[data-tooltip]:hover:after,
-			[data-tooltip]:focus:before,
-			[data-tooltip]:focus:after,
-			.tooltip:hover:before,
-			.tooltip:hover:after,
-			.tooltip:focus:before,
-			.tooltip:focus:after,
-			.tooltip-top:hover:before,
-			.tooltip-top:hover:after,
-			.tooltip-top:focus:before,
-			.tooltip-top:focus:after {
-				-webkit-transform: translateY(-12px);
-				-moz-transform:    translateY(-12px);
-				transform:         translateY(-12px); 
-			}
+      [data-tooltip]:hover:before,
+      [data-tooltip]:hover:after,
+      [data-tooltip]:focus:before,
+      [data-tooltip]:focus:after,
+      .tooltip:hover:before,
+      .tooltip:hover:after,
+      .tooltip:focus:before,
+      .tooltip:focus:after,
+      .tooltip-top:hover:before,
+      .tooltip-top:hover:after,
+      .tooltip-top:focus:before,
+      .tooltip-top:focus:after {
+        -webkit-transform: translateY(-12px);
+        -moz-transform: translateY(-12px);
+        transform: translateY(-12px);
+      }
 
-			/* Left */
-			.tooltip-left:before,
-			.tooltip-left:after {
-				right: 100%;
-				bottom: 50%;
-				left: auto;
-			}
+      /* Left */
+      .tooltip-left:before,
+      .tooltip-left:after {
+        right: 100%;
+        bottom: 50%;
+        left: auto;
+      }
 
-			.tooltip-left:before {
-				margin-left: 0;
-				margin-right: -12px;
-				margin-bottom: 0;
-				border-top-color: transparent;
-				border-left-color: #000;
-				border-left-color: hsla(0, 0%, 20%, 0.9);
-			}
+      .tooltip-left:before {
+        margin-left: 0;
+        margin-right: -12px;
+        margin-bottom: 0;
+        border-top-color: transparent;
+        border-left-color: #000;
+        border-left-color: hsla(0, 0%, 20%, 0.9);
+      }
 
-			.tooltip-left:hover:before,
-			.tooltip-left:hover:after,
-			.tooltip-left:focus:before,
-			.tooltip-left:focus:after {
-				-webkit-transform: translateX(-12px);
-				-moz-transform:    translateX(-12px);
-				transform:         translateX(-12px); 
-			}
+      .tooltip-left:hover:before,
+      .tooltip-left:hover:after,
+      .tooltip-left:focus:before,
+      .tooltip-left:focus:after {
+        -webkit-transform: translateX(-12px);
+        -moz-transform: translateX(-12px);
+        transform: translateX(-12px);
+      }
 
-			/* Bottom */
-			.tooltip-bottom:before,
-			.tooltip-bottom:after {
-				top: 100%;
-				bottom: auto;
-				left: 50%;
-			}
+      /* Bottom */
+      .tooltip-bottom:before,
+      .tooltip-bottom:after {
+        top: 100%;
+        bottom: auto;
+        left: 50%;
+      }
 
-			.tooltip-bottom:before {
-				margin-top: -12px;
-				margin-bottom: 0;
-				border-top-color: transparent;
-				border-bottom-color: #000;
-				border-bottom-color: hsla(0, 0%, 20%, 0.9);
-			}
+      .tooltip-bottom:before {
+        margin-top: -12px;
+        margin-bottom: 0;
+        border-top-color: transparent;
+        border-bottom-color: #000;
+        border-bottom-color: hsla(0, 0%, 20%, 0.9);
+      }
 
-			.tooltip-bottom:hover:before,
-			.tooltip-bottom:hover:after,
-			.tooltip-bottom:focus:before,
-			.tooltip-bottom:focus:after {
-				-webkit-transform: translateY(12px);
-				-moz-transform:    translateY(12px);
-				transform:         translateY(12px); 
-			}
+      .tooltip-bottom:hover:before,
+      .tooltip-bottom:hover:after,
+      .tooltip-bottom:focus:before,
+      .tooltip-bottom:focus:after {
+        -webkit-transform: translateY(12px);
+        -moz-transform: translateY(12px);
+        transform: translateY(12px);
+      }
 
-			/* Right */
-			.tooltip-right:before,
-			.tooltip-right:after {
-				bottom: 50%;
-				left: 100%;
-			}
+      /* Right */
+      .tooltip-right:before,
+      .tooltip-right:after {
+        bottom: 50%;
+        left: 100%;
+      }
 
-			.tooltip-right:before {
-				margin-bottom: 0;
-				margin-left: -12px;
-				border-top-color: transparent;
-				border-right-color: #000;
-				border-right-color: hsla(0, 0%, 20%, 0.9);
-			}
+      .tooltip-right:before {
+        margin-bottom: 0;
+        margin-left: -12px;
+        border-top-color: transparent;
+        border-right-color: #000;
+        border-right-color: hsla(0, 0%, 20%, 0.9);
+      }
 
-			.tooltip-right:hover:before,
-			.tooltip-right:hover:after,
-			.tooltip-right:focus:before,
-			.tooltip-right:focus:after {
-				-webkit-transform: translateX(12px);
-				-moz-transform:    translateX(12px);
-				transform:         translateX(12px); 
-			}
+      .tooltip-right:hover:before,
+      .tooltip-right:hover:after,
+      .tooltip-right:focus:before,
+      .tooltip-right:focus:after {
+        -webkit-transform: translateX(12px);
+        -moz-transform: translateX(12px);
+        transform: translateX(12px);
+      }
 
-			/* Move directional arrows down a bit for left/right tooltips */
-			.tooltip-left:before,
-			.tooltip-right:before {
-				top: 3px;
-			}
+      /* Move directional arrows down a bit for left/right tooltips */
+      .tooltip-left:before,
+      .tooltip-right:before {
+        top: 3px;
+      }
 
-			/* Vertically center tooltip content for left/right tooltips */
-			.tooltip-left:after,
-			.tooltip-right:after {
-				margin-left: 0;
-				margin-bottom: -16px;
-			}
+      /* Vertically center tooltip content for left/right tooltips */
+      .tooltip-left:after,
+      .tooltip-right:after {
+        margin-left: 0;
+        margin-bottom: -16px;
+      }
     </style>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-120.anonfiles.com/FfB9P7V6o0/3439f328-1600285756/Group%205" />
   </head>
   <body>
     <img
-      src="https://iili.io/2oF4El.png"
+      src="https://cdn-117.anonfiles.com/JfM9P4Veob/9053fe43-1600286092/Group%204.svg"
       class="centered"
       width="288.4"
       height="288.4" />
@@ -290,32 +321,31 @@
         data-tooltip="DOWNLOAD"
         class="div1 tooltip-bottom"
         style="
-          background: url('https://iili.io/2oFUQf.png') no-repeat center center;
+          background-image: url('https://cdn-124.anonfiles.com/J9BbP3Vdoe/3f2c9ea6-1600285764/download-solid.svg');
         "></div>
       <div
-				data-tooltip="STORE"
+        data-tooltip="STORE"
         class="div1 tooltip-bottom"
         style="
-          background: url('https://iili.io/2oFi2S.png') no-repeat center center;
+          background-image: url('https://cdn-123.anonfiles.com/NeBeP0V3o8/83bc418e-1600285743/store-solid.svg');
         "></div>
       <div
-				data-tooltip="DISCORD"
+        data-tooltip="DISCORD"
         class="div1 tooltip-bottom"
         style="
-          background: url('https://iili.io/2oF8Is.png') no-repeat center center;
+          background-image: url('https://cdn-107.anonfiles.com/B2B3PdVboc/d5849747-1600285767/discord-brands.svg');
         "></div>
       <div
-				data-tooltip="GITHUB"
+        data-tooltip="GITHUB"
         class="div1 tooltip-bottom"
         style="
-          background: url('https://iili.io/2oFrB4.png') no-repeat center center;
+          background-image: url('https://cdn-104.anonfiles.com/HaB6P9V0oa/5d2d5302-1600285761/github-brands.svg');
         "></div>
       <div
-				data-tooltip="DOCUMENTATION"
+        data-tooltip="DOCUMENTATION"
         class="div1 tooltip-bottom"
         style="
-          background: url('https://iili.io/2oF642.png') no-repeat center
-            center;
+          background-image: url('https://cdn-103.anonfiles.com/LeB3P7Vao4/ebfaf8e6-1600285750/scroll-solid.svg');
         "></div>
     </div>
   </body>
