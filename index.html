@@ -348,5 +348,10 @@
           background-image: url('./images/scroll-solid.svg');
         "></div>
     </div>
+    <script>
+			document.getElementById('body').ontouchend = (e) => {
+					e.preventDefault();
+			};
+		</script>
   </body>
 </html>
