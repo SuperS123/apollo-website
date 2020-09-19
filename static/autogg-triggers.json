@@ -1,8 +1,8 @@
 {
     "version": {
        "date":"09/19/2020",
-       "version":"0.1",
-       "note":"Initial Commit."
+       "version":"0.2",
+       "note":"Added Normal Messages and changed format"
     },
     "wins": [
        "^ +1st Killer - ?\\[?\\w*\\+*\\]? \\w+ - \\d+(?: Kills?)?$",
