@@ -229,7 +229,7 @@
 		},
 		{
 			"name": "Prototype",
-			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/MurderMystery-64.png",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/Prototype-64.png",
 			"modes": [
 				{ "name": "Capture The Wool", "command": "/play prototype_pvp_ctw" },
 				{ "name": "King of the Hill 6v6", "command": "/play prototype_koth_two_team" },
