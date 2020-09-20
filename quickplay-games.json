@@ -1,0 +1,242 @@
+{
+	"version": {
+		"date": "09/20/2020",
+		"version": "0.1",
+		"note": "Initial Version"
+	},
+	"games": [
+		{
+			"name": "SkyBlock",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/SkyBlock-64.png",
+			"modes": [ { "name": "SkyBlock", "command": "/play sb" }]
+		},
+		{
+			"name": "Warlords",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/Warlords-64.png",
+			"modes": [
+				{ "name": "Capture the Flag", "command": "/play warlords_ctf_mini" },
+				{ "name": "Domination", "command": "/play warlords_domination" },
+				{ "name": "Team Deathmatch", "command": "/play warlords_team_deathmatch" }
+			]
+		},
+		{
+			"name": "Mega Walls",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/MegaWalls-64.png",
+			"modes": [
+				{ "name": "Standard", "command": "/play mw_standard" },
+				{ "name": "Faceoff", "command": "/play mw_face_off" }
+			]
+		},
+		{
+			"name": "Blitz Survival Games",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/SG-64.png",
+			"modes": [
+				{ "name": "Solo", "command": "/play blitz_solo_normal" },
+				{ "name": "Teams", "command": "/play blitz_teams_normal" }
+			]
+		},
+		{
+			"name": "SkyWars",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/Skywars-64.png",
+			"modes": [
+				{ "name": "Ranked", "command": "/play ranked_normal" },
+				{ "name": "Solo Normal", "command": "/play solo_normal" },
+				{ "name": "Solo Insane", "command": "/play solo_insane" },
+				{ "name": "Doubles Normal", "command": "/play doubles_normal" },
+				{ "name": "Doubles Insane", "command": "/play doubles_insane" },
+				{ "name": "Mega Normal", "command": "/play mega_normal" },
+				{ "name": "Mega Doubles", "command": "/play mega_doubles" },
+				{ "name": "Solo TNT Madness", "command": "/play solo_insane_tnt_madness" },
+				{ "name": "Doubles TNT Madness", "command": "/play teams_insane_tnt_madness" },
+				{ "name": "Solo Rush", "command": "/play solo_rush" },
+				{ "name": "Doubles Rush", "command": "/play doubles_rush" },
+				{ "name": "Solo Slime", "command": "/play solo_slime" },
+				{ "name": "Doubles Slime", "command": "/play doubles_slime" },
+				{ "name": "Solo Lucky Blocks", "command": "/play solo_insane_lucky" },
+				{ "name": "Doubles Lucky Blocks", "command": "/play teams_insane_lucky" },
+				{ "name": "Hunter vs. Beasts", "command": "/play solo_insane_hunter_vs_beasts" }
+			]
+		},
+		{
+			"name": "TNT Games",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/TNT-64.png",
+			"modes": [
+				{ "name": "TNT Run", "command": "/play tnt_tntrun" },
+				{ "name": "PVP Run", "command": "/play tnt_pvprun" },
+				{ "name": "Bowspleef", "command": "/play tnt_bowspleef" },
+				{ "name": "TNT Tag", "command": "/play tnt_tntag" },
+				{ "name": "Wizards", "command": "/play tnt_capture" }
+			]
+		},
+		{
+			"name": "BedWars",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/BedWars-64.png",
+			"modes": [
+				{ "name": "Solos", "command": "/play bedwars_eight_one" },
+				{ "name": "Doubles", "command": "/play bedwars_eight_two" },
+				{ "name": "3v3v3v3", "command": "/play bedwars_four_three" },
+				{ "name": "4v4v4v4", "command": "/play bedwars_four_four" },
+				{ "name": "Capture", "command": "/play bedwars_capture" },
+				{ "name": "Rush Doubles", "command": "/play bedwars_eight_two_rush" },
+				{ "name": "Rush 4v4v4v4", "command": "/play bedwars_four_four_rush" },
+				{ "name": "Ultimate Doubles", "command": "/play bedwars_eight_two_ultimate" },
+				{ "name": "Ultimate 4v4v4v4", "command": "/play bedwars_four_four_ultimate" },
+				{ "name": "Castle 40v40", "command": "/play bedwars_castle" },
+				{ "name": "4v4", "command": "/play bedwars_two_four" }
+			]
+		},
+		{
+			"name": "Arcade",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/Arcade-64.png",
+			"modes": [
+				{ "name": "Hole in the Wall", "command": "/play arcade_hole_in_the_wall" },
+				{ "name": "Football", "command": "/play arcade_soccer" },
+				{ "name": "Bounty Hunters", "command": "/play arcade_bounty_hunters" },
+				{ "name": "Pixel Painters", "command": "/play arcade_pixel_painters" },
+				{ "name": "Dragon Wars", "command": "/play arcade_dragon_wars" },
+				{ "name": "Ender Spleef", "command": "/play arcade_ender_spleef" },
+				{ "name": "Galaxy Wars", "command": "/play arcade_starwars" },
+				{ "name": "Throw Out", "command": "/play arcade_throw_out" },
+				{ "name": "Creeper Attack", "command": "/play arcade_creeper_attack" },
+				{ "name": "Party Games", "command": "/play arcade_party_games_1" },
+				{ "name": "Farm Hunt", "command": "/play arcade_farm_hunt" },
+				{ "name": "Zombies Dead End", "command": "/play arcade_zombies_dead_end" },
+				{ "name": "Zombies Bad Blood", "command": "/play arcade_zombies_bad_Blood" },
+				{ "name": "Zombies Alien Arcadium", "command": "/play arcade_zombies_alien_arcadium" },
+				{ "name": "Hide and Seek Prop Hunt", "command": "/play arcade_hide_and_seek_prop_hunt" },
+				{ "name": "Hide and Seek Party Pooper", "command": "/play arcade_hide_and_seek_party_pooper" },
+				{ "name": "Hypixel Says", "command": "/play arcade_simon_says" },
+				{ "name": "Mini Walls", "command": "/play arcade_mini_walls" },
+				{ "name": "Blocking Dead", "command": "/play arcade_day_one" }
+			]
+		},
+		{
+			"name": "Cops and Crims",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/CVC-64.png",
+			"modes": [
+				{ "name": "Defusal", "command": "/play mcgo_normal" },
+				{ "name": "Deathmatch", "command": "/play mcgo_deathmatch" },
+				{ "name": "Defusal Party", "command": "/play mcgo_normal_party" },
+				{ "name": "Deathmatch Party", "command": "/play mcgo_deathmatch_party" }
+			]
+		},
+		{
+			"name": "Build Battle",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/BuildBattle-64.png",
+			"modes": [
+				{ "name": "Solo", "command": "/play build_battle_solo_normal" },
+				{ "name": "Teams", "command": "/play build_battle_teams_normal" },
+				{ "name": "Pro Mode", "command": "/play build_battle_solo_pro" },
+				{ "name": "Guess The Build", "command": "/play build_battle_guess_the_build" }
+			]
+		},
+		{
+			"name": "Crazy Walls",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/CrazyWalls-64.png",
+			"modes": [
+				{ "name": "Solo Normal", "command": "/play crazy_walls_solo" },
+				{ "name": "Teams Normal", "command": "/play crazy_walls_team" },
+				{ "name": "Solo Insane", "command": "/play crazy_walls_solo_chaos" },
+				{ "name": "Teams Insane", "command": "/play crazy_walls_team_chaos" }
+			]
+		},
+		{
+			"name": "UHC",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/UHC-64.png",
+			"modes": [
+				{ "name": "Solo", "command": "/play uhc_solo" },
+				{ "name": "Teams", "command": "/play uhc_teams" },
+				{ "name": "Events Mode", "command": "/play uhc_events" }
+			]
+		},
+		{
+			"name": "Classic Games",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/ClassicLobby-64.png",
+			"modes": [
+				{ "name": "Vampirez", "command": "/play vampirez" },
+				{ "name": "Quake Solo", "command": "/play quake_solo" },
+				{ "name": "Quake Teams", "command": "/play quake_teams" },
+				{ "name": "Paintball", "command": "/play paintball" },
+				{ "name": "Arena 1v1", "command": "/play arena_1v1" },
+				{ "name": "Arena 2v2", "command": "/play arena_2v2" },
+				{ "name": "Arena 4v4", "command": "/play arena_4v4" },
+				{ "name": "Walls", "command": "/play walls" },
+				{ "name": "Turbo Kart Racers", "command": "/play tkr" }
+			]
+		},
+		{
+			"name": "Duels",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/Duels-64.png",
+			"modes": [
+				{ "name": "Solo Classic", "command": "/play duels_classic_duel" },
+				{ "name": "Solo SkyWars", "command": "/play duels_sw_duel" },
+				{ "name": "Doubles SkyWars", "command": "/play duels_sw_doubles" },
+				{ "name": "Solo Bow", "command": "/play duels_bow_duel" },
+				{ "name": "Solo UHC", "command": "/play duels_uhc_duel" },
+				{ "name": "Doubles UHC", "command": "/play duels_uhc_doubles" },
+				{ "name": "Teams UHC", "command": "/play duels_uhc_four" },
+				{ "name": "Deathmatch UHC", "command": "/play duels_uhc_meetup" },
+				{ "name": "Solo NoDebuffs", "command": "/play duels_potion_duel" },
+				{ "name": "Solo Combo", "command": "/play duels_combo_duel" },
+				{ "name": "Solo Potion", "command": "/play duels_potion_duel" },
+				{ "name": "Solo OP", "command": "/play duels_op_duel" },
+				{ "name": "Doubles OP", "command": "/play duels_op_doubles" },
+				{ "name": "Solo Mega Walls", "command": "/play duels_mw_duel" },
+				{ "name": "Doubles Mega Walls", "command": "/play duels_mw_doubles" },
+				{ "name": "Solo Sumo", "command": "/play duels_solo_sumo" },
+				{ "name": "Solo Blitz", "command": "/play duels_blitz_duel" },
+				{ "name": "Solo Bow Spleef", "command": "/play duels_bowspleef_duel" },
+				{ "name": "Bridge 1v1", "command": "/play duels_bridge_duel" },
+				{ "name": "Bridge 2v2", "command": "/play duels_bridge_doubles" },
+				{ "name": "Bridge 4v4", "command": "/play duels_bridge_four" },
+				{ "name": "Bridge 2v2v2v2", "command": "/play duels_bridge_2v2v2v2" },
+				{ "name": "Bridge 3v3v3v3", "command": "/play duels_bridge_3v3v3v3" }
+			]
+		},
+		{
+			"name": "Speed UHC",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/SpeedUHC-64.png",
+			"modes": [
+				{ "name": "Solo Normal", "command": "/play speed_solo_normal" },
+				{ "name": "Teams Normal", "command": "/play speed_team_normal" }
+			]
+		},
+		{
+			"name": "Smash Heroes",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/SmashHeroes-64.png",
+			"modes": [
+				{ "name": "Solo 1v1v1v1", "command": "/play super_smash_solo_normal" },
+				{ "name": "Teams 2v2", "command": "/play super_smash_2v2_normal" },
+				{ "name": "Teams 2v2v2v2", "command": "/play super_smash_2v2v2v2_normal" },
+				{ "name": "1v1 Mode", "command": "/play super_smash_1v1_normal" },
+				{ "name": "Friends 1v1v1v1", "command": "/play super_smash_friends_normal" }
+			]
+		},
+		{
+			"name": "Murder Mystery",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/MurderMystery-64.png",
+			"modes": [
+				{ "name": "Classic", "command": "/play murder_classic" },
+				{ "name": "Double Up", "command": "/play murder_double_up" },
+				{ "name": "Assassins", "command": "/play murder_assassins" },
+				{ "name": "Infection", "command": "/play murder_infection" }
+			]
+		},
+		{
+			"name": "The Pit",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/Prototype-64.png",
+			"modes": [ { "name": "The Pit", "command": "/play pit" }]
+		},
+		{
+			"name": "Prototype",
+			"icon": "https://hypixel.net/styles/hypixel-uix/hypixel/game-icons/MurderMystery-64.png",
+			"modes": [
+				{ "name": "Capture The Wool", "command": "/play prototype_pvp_ctw" },
+				{ "name": "King of the Hill 6v6", "command": "/play prototype_koth_two_team" },
+				{ "name": "King of the Hill 3v3v3v3", "command": "/play prototype_koth_four_team" },
+				{ "name": "TowerWars Solo", "command": "/play prototype_towerwars_solo" },
+				{ "name": "TowerWars Teams", "command": "/play prototype_towerwars_team_of_two" }
+			]
+		}
+	]
+}	
