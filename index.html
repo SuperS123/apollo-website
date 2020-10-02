@@ -1,243 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Apollo Client" />
-        <meta name="language" content="English" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="Apollo Client" />
-        <meta property="og:title" content="Apollo Client" />
-        <meta property="og:url" content="https://apolloclient.net" />
-        <title>Apollo Client</title>
-        <link rel="icon" type="image/png" href="./images/favicon.png" />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./index.css" />
-    </head>
-    <body id="body">
-        <img
-            src="./images/center-logo.svg"
-            class="centered"
-            width="288.4"
-            height="288.4"
-            alt="Apollo Client logo"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Apollo Client" />
+    <meta name="language" content="English" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Apollo Client" />
+    <meta property="og:title" content="Apollo Client" />
+    <meta property="og:url" content="https://apolloclient.net" />
+    <title>Apollo Client</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body id="body">
+    <img
+      src="./images/center-logo.svg"
+      class="centered"
+      width="288.4"
+      height="288.4"
+      alt="Apollo Client logo"
+    />
 
-        <div class="buttongroup">
-            <div
-                data-tooltip="DOWNLOAD"
-                class="div1 tooltip-bottom"
-                id="downloadbutton"
-                style="background-image: url('./images/download-solid.svg')"
-            ></div>
-            <!--<div
+    <div class="buttongroup">
+      <div
+        data-tooltip="DOWNLOAD"
+        class="div1 tooltip-bottom"
+        id="downloadbutton"
+        style="background-image: url('./images/download-solid.svg')"
+      ></div>
+      <!--<div
         data-tooltip="DOWNLOAD"
         class="div1 tooltip-bottom"
         id="downloadbutton"
         style="background-image: url('./images/download-solid.svg')"></div>-->
-            <a
-                data-tooltip="STORE"
-                class="div1 tooltip-bottom"
-                id="storebutton"
-                style="background-image: url('./images/store-solid.svg')"
-                href="#"
-            ></a>
-            <a
-                data-tooltip="DISCORD"
-                class="div1 tooltip-bottom"
-                id="discordbutton"
-                style="background-image: url('./images/discord-brands.svg')"
-                href="https://discord.gg/QSfbVMC"
-            ></a>
-            <a
-                data-tooltip="GITHUB"
-                class="div1 tooltip-bottom"
-                id="githubbutton"
-                style="background-image: url('./images/github-brands.svg')"
-                href="https://github.com/Ic0vid/Apollo"
-            ></a>
-            <a
-                data-tooltip="DOCUMENTATION"
-                class="div1 tooltip-bottom"
-                id="docsbutton"
-                style="background-image: url('./images/scroll-solid.svg')"
-                href="#"
-            ></a>
-        </div>
-
-        <div
-            class="modal fade"
-            id="downloadsModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="downloadsModalCenterTitle"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content bg-dark text-white">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="downloadsModalLongTitle">
-                            Downloads
-                        </h5>
-                    </div>
-                    <div class="modal-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a
-                                    class="nav-link"
-                                    id="windows-tab"
-                                    data-toggle="tab"
-                                    href="#windows"
-                                    role="tab"
-                                    aria-controls="windows"
-                                    aria-selected="true"
-                                >
-                                    Windows
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a
-                                    class="nav-link"
-                                    id="mac-tab"
-                                    data-toggle="tab"
-                                    href="#mac"
-                                    role="tab"
-                                    aria-controls="mac"
-                                    aria-selected="false"
-                                >
-                                    Mac
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a
-                                    class="nav-link"
-                                    id="linux-tab"
-                                    data-toggle="tab"
-                                    href="#linux"
-                                    role="tab"
-                                    aria-controls="linux"
-                                    aria-selected="false"
-                                >
-                                    Linux
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a
-                                    class="nav-link"
-                                    id="source-tab"
-                                    data-toggle="tab"
-                                    href="#source"
-                                    role="tab"
-                                    aria-controls="source"
-                                    aria-selected="false"
-                                >
-                                    Source
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div
-                                class="tab-pane fade"
-                                id="windows"
-                                role="tabpanel"
-                                aria-labelledby="windows-tab"
-                            >
-                                Downloads coming soon!
-                            </div>
-                            <div
-                                class="tab-pane fade"
-                                id="mac"
-                                role="tabpanel"
-                                aria-labelledby="mac-tab"
-                            >
-                                Downloads coming soon!
-                            </div>
-                            <div
-                                class="tab-pane fade"
-                                id="linux"
-                                role="tabpanel"
-                                aria-labelledby="linux-tab"
-                            >
-                                Downloads coming soon!
-                            </div>
-                            <div
-                                class="tab-pane fade"
-                                id="source"
-                                role="tabpanel"
-                                aria-labelledby="source-tab"
-                            >
-                                <button class="btn btn-secondary">
-                                    <a
-                                        href="https://github.com/Ic0vid/Apollo/archive/master.zip"
-                                        style="
-                                            color: white;
-                                            text-decoration: none;
-                                        "
-                                        >Download</a
-                                    >
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <a
+        data-tooltip="STORE"
+        class="div1 tooltip-bottom"
+        id="storebutton"
+        style="background-image: url('./images/store-solid.svg')"
+        href="#"
+      ></a>
+      <a
+        data-tooltip="DISCORD"
+        class="div1 tooltip-bottom"
+        id="discordbutton"
+        style="background-image: url('./images/discord-brands.svg')"
+        href="https://discord.gg/QSfbVMC"
+      ></a>
+      <a
+        data-tooltip="GITHUB"
+        class="div1 tooltip-bottom"
+        id="githubbutton"
+        style="background-image: url('./images/github-brands.svg')"
+        href="https://github.com/Ic0vid/Apollo"
+      ></a>
+      <a
+        data-tooltip="DOCUMENTATION"
+        class="div1 tooltip-bottom"
+        id="docsbutton"
+        style="background-image: url('./images/scroll-solid.svg')"
+        href="#"
+      ></a>
+    </div>
+    <div
+      class="modal fade"
+      id="downloadsModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="downloadsModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="downloadsModalLongTitle">Downloads</h5>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="windows-tab"
+                  data-toggle="tab"
+                  href="#windows"
+                  role="tab"
+                  aria-controls="windows"
+                  aria-selected="true"
+                >
+                  Windows
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="mac-tab"
+                  data-toggle="tab"
+                  href="#mac"
+                  role="tab"
+                  aria-controls="mac"
+                  aria-selected="false"
+                >
+                  Mac
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="linux-tab"
+                  data-toggle="tab"
+                  href="#linux"
+                  role="tab"
+                  aria-controls="linux"
+                  aria-selected="false"
+                >
+                  Linux
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="source-tab"
+                  data-toggle="tab"
+                  href="#source"
+                  role="tab"
+                  aria-controls="source"
+                  aria-selected="false"
+                >
+                  Source
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade"
+                id="windows"
+                role="tabpanel"
+                aria-labelledby="windows-tab"
+              >
+                Downloads coming soon!
+              </div>
+              <div
+                class="tab-pane fade"
+                id="mac"
+                role="tabpanel"
+                aria-labelledby="mac-tab"
+              >
+                Downloads coming soon!
+              </div>
+              <div
+                class="tab-pane fade"
+                id="linux"
+                role="tabpanel"
+                aria-labelledby="linux-tab"
+              >
+                Downloads coming soon!
+              </div>
+              <div
+                class="tab-pane fade"
+                id="source"
+                role="tabpanel"
+                aria-labelledby="source-tab"
+              >
+                <button class="btn btn-secondary">
+                  <a
+                    href="https://github.com/Ic0vid/Apollo/archive/master.zip"
+                    style="color: white; text-decoration: none"
+                    >Download</a
+                  >
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <script>
-            window.onload = () => {
-                // Detect OS to display correct modal
-                const os = navigator.appVersion.toLowerCase();
-                if (os.indexOf("win") !== -1) {
-                    $("#windows-tab").addClass("active");
-                    $("#windows").addClass("show").addClass("active");
-                }
-                if (os.indexOf("mac") !== -1) {
-                    $("#mac-tab").addClass("active");
-                    $("#mac").addClass("show").addClass("active");
-                }
-                if (os.indexOf("linux") !== -1) {
-                    $("#linux-tab").addClass("active");
-                    $("#linux").addClass("show").addClass("active");
-                }
-            };
+    <script>
+      window.onload = () => {
+        // Detect OS to display correct modal
+        const os = navigator.appVersion.toLowerCase();
+        if (os.indexOf('win') !== -1) {
+          $('#windows-tab').addClass('active');
+          $('#windows').addClass('show').addClass('active');
+        }
+        if (os.indexOf('mac') !== -1) {
+          $('#mac-tab').addClass('active');
+          $('#mac').addClass('show').addClass('active');
+        }
+        if (os.indexOf('linux') !== -1) {
+          $('#linux-tab').addClass('active');
+          $('#linux').addClass('show').addClass('active');
+        }
+      };
 
-            document.getElementById("body").ontouchend = (e) => {
-                e.preventDefault();
-            };
-            document.getElementById("downloadbutton").onclick = (e) => {
-                $("#downloadsModalCenter").modal({
-                    keyboard: true,
-                });
-            };
-            document.getElementById("discordbutton").onclick = (e) => {
-                window.location.href = "https://discord.gg/QSfbVMC";
-            };
-            document.getElementById("githubbutton").onclick = (e) => {
-                window.location.href = "https://github.com/Ic0vid/Apollo";
-            };
-        </script>
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
+      document.getElementById('body').ontouchend = (e) => {
+        e.preventDefault();
+      };
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            defer
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+      document.getElementById('downloadbutton').onclick = (e) => {
+        $('#downloadsModalCenter').modal({
+          keyboard: true,
+        });
+      };
+
+      document.getElementById('discordbutton').onclick = (e) => {
+        window.location.href = 'https://discord.gg/QSfbVMC';
+      };
+      document.getElementById('githubbutton').onclick = (e) => {
+        window.location.href = 'https://github.com/Ic0vid/Apollo';
+      };
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
